@@ -1,0 +1,92 @@
+html
+  head
+    title= title 
+    link(rel="stylesheet", href="/css/index.css")
+  body 
+    .heading 
+      .date 
+        p= day 
+        p= date
+      
+      img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/HTTP_logo.svg/1200px-HTTP_logo.svg.png", alt="", srcset="")
+    
+    .deliverydetails 
+      .title 
+        p Deleivery Details
+      .info 
+        .Name 
+          p= data.Username
+        .Address 
+          p= data.Address
+        .Pincode 
+          p= data.Pincode
+        .Emailinfo
+          p= data.EmailId
+          p= data.Phoneno
+      
+    .tableinfo 
+      table 
+        tr 
+          th Item Img 
+          th Item Name 
+          th Price 
+          th Quantity 
+          th Total 
+        tr 
+        each val in cartinfo
+          if(val.Checkout)
+            tr 
+              td= val.Itemimg
+              td= val.Itemname
+              td= val.Price
+              td= val.Quantity
+              td= val.Price * val.Quantity
+            tr
+        tr 
+          th Total Price 
+          th 
+          th 
+          th 
+          - var sum = 0
+          each val in cartinfo 
+            if(val.Checkout)
+              - sum = sum + val.Price * val.Quantity 
+          th= sum
+        tr 
+        tr 
+          th Gst 
+          th 
+          th 
+          th +
+          th= Gst
+        tr 
+        tr 
+          th  
+          th 
+          th 
+          th 
+          th= sum + Gst
+        tr 
+    
+
+
+    .deliveryinfo 
+      .deliverydate 
+        p It will be deliverd in 3 to 4 days
+      .greeting 
+        p Thanks for ordering! 
+
+    .footer 
+      .signature 
+        p CEO
+        p Admin
+      .logo   
+        img(src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/HTTP_logo.svg/1200px-HTTP_logo.svg.png", alt="", srcset="")  
+
+
+
+
+
+
+
+

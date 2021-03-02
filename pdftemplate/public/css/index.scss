@@ -1,0 +1,163 @@
+body{
+    margin: 10px;
+    padding: 10px;
+    //background-image: url("https://th.bing.com/th/id/R16c3382a58eeba57b4d8efd21f2acfd2?rik=9mHCeLItG5hQVA&riu=http%3a%2f%2fwww.onlygfx.com%2fwp-content%2fuploads%2f2017%2f12%2fsold-stamp-3-1024x795.png&ehk=f8o4LN%2bMAo3qiiCyvoeac%2bz7L%2fLuc77n6SCy%2bKklFVU%3d&risl=&pid=ImgRaw");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position-x: center;
+    background-position-y: center;    
+    backdrop-filter: blur(2px);
+}
+
+.heading{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        height: 50px;
+        width: 100px;
+        
+    }
+
+    .date{
+        width: 100%;
+
+        p{
+            font-size: 20px;
+            font-weight: normal;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+
+.deliverydetails{
+    .title{
+        margin: 0;
+        padding: 0;
+        p{
+            font-size: 23px;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+
+    }
+
+    .info{
+        .Name{
+            p{
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: normal;
+            }
+        }
+        .Address{
+            width: 300px;
+            display: flex;
+            flex-direction: row;
+            p{
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+        }
+        .Pincode{
+            display: flex;
+            flex-direction: row;
+            p{
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+        }
+        .Emailinfo{
+            display: flex;
+            flex-direction: row;
+            p{
+                margin: 0;
+                padding: 0;
+                font-size: 18px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: normal;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+.tableinfo{
+    margin: 20px;
+    margin-top: 50px;
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+}
+
+.deliveryinfo{
+
+    .greeting{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        p{
+            font-size: 22px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+    }
+
+    .deliverydate{
+        width: 100%;
+        text-align: center;
+        padding: 10px;
+        p{
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+        }
+    }
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+    .signature{
+        margin: 0;
+        padding: 0;
+    }
+
+    .logo{
+        img{
+            height: 50px;
+            width: 100px;
+        }
+    }
+}
